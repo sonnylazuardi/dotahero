@@ -1,0 +1,19 @@
+<h1>Hero</h1>
+
+<a href="#/hero/create">Create Hero</a>
+
+<ul class="heroes">
+	<li ng-repeat="hero in heroes.$object.data">
+		<a href="#/hero/{{hero.id}}">
+			{{hero.name}}
+		</a> | 
+		<a href="#/hero/{{hero.id}}/update">
+			edit
+		</a> | 
+		<a href="#/hero/{{hero.id}}/delete">
+			delete
+		</a>
+	</li>
+</ul>
+
+ <div pagination="heroes"></div>

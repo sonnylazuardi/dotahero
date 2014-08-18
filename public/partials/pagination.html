@@ -1,0 +1,9 @@
+<ul ng-show="totalPages > 1"> 
+	<li><a ng-click="firstPage()">&laquo;</a></li> 
+	<li><a ng-click="prevPage()">&lsaquo;</a></li> 
+	<li ng-repeat="n in pages"> 
+		<a ng-bind="n" ng-click="setPage(n)">1</a>
+	</li> 
+	<li><a ng-click="nextPage()">&rsaquo;</a></li> 
+	<li><a ng-click="lastPage()">&raquo;</a></li> 
+</ul>

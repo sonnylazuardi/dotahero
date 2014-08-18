@@ -1,0 +1,100 @@
+<h1><input type="text" ng-model="hero.name"></h1>
+<h2><input type="text" ng-model="hero.alias"></h2>
+
+<table>
+	<tr>
+		<td>
+			Type
+		</td>
+		<td>
+			<input type="text" ng-model="hero.type">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Attack Type
+		</td>
+		<td>
+			<input type="text" ng-model="hero.attack_type">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Strength
+		</td>
+		<td>
+			<input type="text" ng-model="hero.strength">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Agility
+		</td>
+		<td>
+			<input type="text" ng-model="hero.agility">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Intelligence
+		</td>
+		<td>
+			<input type="text" ng-model="hero.intelligence">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Health
+		</td>
+		<td>
+			<input type="text" ng-model="hero.health">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Mana
+		</td>	
+		<td>
+			<input type="text" ng-model="hero.mana">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Damage
+		</td>
+		<td>
+			<input type="text" ng-model="hero.damage_min"> - <input type="text" ng-model="hero.damage_max">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Range
+		</td>
+		<td>
+			<input type="text" ng-model="hero.range">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Armor
+		</td>
+		<td>
+			<input type="text" ng-model="hero.armor">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			Movement
+		</td>
+		<td>
+			<input type="text" ng-model="hero.movement">
+		</td>
+	</tr>
+</table>
+
+<input type="text" ng-model="hero.image">
+<img ng-src="{{hero.image}}" alt="">
+
+<p><textarea ng-model="hero.description"></textarea></p>
+
+<a ng-click="save()">Save</a>
